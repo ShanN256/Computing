@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int myFunc(float X);
+int count=0;
+
+int main() {
+    printf("%d", myFunc(11));
+    
+    return 0;
+}
+
+int myFunc(float X) {
+    
+    while (X<=100) {
+        X=1.5*X-5;
+        count+=1;
+    }
+    
+    return count;
+}
