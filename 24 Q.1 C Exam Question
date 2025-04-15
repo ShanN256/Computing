@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void myFunc(int X, int Y);
+
+int main() {
+    myFunc(5, 4);
+    return 0;
+}
+
+void myFunc(int X, int Y) {
+    for (int i=1; i<=Y; i++) {
+        int value=X*(2*i);
+        printf("%d\n", value);
+    }
+}
